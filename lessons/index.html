@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Test</title>
+</head>
+<body>
+<input type="text" id="calc" onchange="showMessage()">
+<button onclick="showMessage()">CLick me!</button>
+
+<br><br>
+
+<form action="">
+    <label for="userName">Name</label>
+    <input id="userName" type="text">
+    <label for="age">Age</label>
+    <input id="age" type="text">
+    <button type="button" onclick="sayHello()">Say hello!</button>
+</form>
+
+<script>
+    // for (let i = 0; i < 10; i++) {
+    //     console.log(i);
+    // }
+    //
+    // let array = [1, 2, 3, 4, 5];
+    //
+    // i = 0;
+    // while (i < array.length) {
+    //     console.log(array[i]);
+    //     i++;
+    // }
+
+    // let obj = {
+    //     name: 'Ivan',
+    //     age: 10,
+    //     sex: 'male'
+    // }
+    //
+    // for (let key in obj)
+    // {
+    //     console.log(key);
+    //     console.log(obj[key]);
+    // }
+
+    // async !!!
+
+    function test() {
+        console.log('timeout')
+    }
+
+    console.log('start');
+
+    // выполняем функцию с задержкой, но не прерываем поток других действий
+    // setTimeout(function () {
+    //     console.log('timeout')
+    // }, 2000);
+
+    setTimeout(test, 2000);
+
+    console.log('stop');
+
+    let obj = {
+        name: 'Test',
+        age: 10
+    }
+
+    Object.keys(obj).forEach(function (key) {
+        console.log(key, obj[key]);
+    })
+
+</script>
+
+</body>
+</html>
